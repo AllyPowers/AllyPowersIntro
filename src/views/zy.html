@@ -1,15 +1,96 @@
-<html>
+<html lang="en" >
 <head>
-	<meta charset="utf-8">
-	<title>lc</title>
-	<script type="text/javascript" src='../js/zy.js'></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Angular Material style sheet -->
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
 </head>
-<body>
+<body ng-app="BlankApp" ng-cloak>
+	<md-toolbar>
+      <div class="md-toolbar-tools">
+        <md-button href="../index.html" aria-label="Go Back">
+          Go Back
+        </md-button>
+        <h2>
+          <span>Joeyzzyy</span>
+        </h2>
+        <span flex></span>
+      </div>
+    </md-toolbar>
 
-	<h1>朱越的页面</h1>
-	<div id='zy'>test</div>
-	<a href="../index.html">返回</a>
+    <md-card>
+        <md-card-title-text>
+            <span class="md-headline">关于我</span>
+        </md-card-title-text>
+        <md-card-content>
+          <p>
+            自我介绍...
+          </p>
+        </md-card-content>
+        <md-card-actions layout="row" layout-align="end center">
+          <md-button>联系方式</md-button>
+        </md-card-actions>
+    </md-card>
 
+    <md-card>
+        <md-card-title-text>
+            <span class="md-headline">关于技术</span>
+        </md-card-title-text>
+        <md-card-content>
+          <p>
+            技术介绍
+          </p>
+        </md-card-content>
+        <md-card-actions layout="row" layout-align="end center">
+          <md-button>什么是前端？</md-button>
+        </md-card-actions>
+    </md-card>
+
+    <md-card>
+        <md-card-title-text>
+            <span class="md-headline">关于爱尔兰</span>
+        </md-card-title-text>
+        <md-card-content>
+          <p>
+            爱尔兰介绍
+          </p>
+        </md-card-content>
+        <md-card-actions layout="row" layout-align="end center">
+          <md-button>了解更多关于爱尔兰</md-button>
+        </md-card-actions>
+    </md-card>
+
+    <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+    	<md-button class="md-accent md-raised md-hue-1"
+    		href="../views/lc.html">去看娄聪的主页</md-button>
+    	<md-button class="md-accent md-raised md-hue-1"
+    		href="../views/ll.html">去看李霖的主页</md-button>
+    	<md-button class="md-accent md-raised md-hue-1"
+    		href="../views/zyh.html">去看张玉环的主页</md-button>
+    </section>
+  		
+  <!-- Angular Material requires Angular.js Libraries -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+
+  <!-- Angular Material Library -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+  
+  <!-- Your application bootstrap  -->
+  <script type="text/javascript">    
+    /**
+     * You must include the dependency on 'ngMaterial' 
+     */
+    var app = angular.module('BlankApp', ['ngMaterial']);
+    
+    
+  </script>
+  
 </body>
 </html>
 
+<!--
+Copyright 2016 Google Inc. All Rights Reserved. 
+Use of this source code is governed by an MIT-style license that can be in foundin the LICENSE file at http://material.angularjs.org/license.
+-->

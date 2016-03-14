@@ -18,7 +18,7 @@ gulp.task('connect', function () {
         root: [srcRoot],
         port: 3002,
         livereload: true,
-        fallback: 'src/index.html'
+        fallback: 'src/views/lc.html'
     });
 });
 
@@ -30,7 +30,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('watch-html', function () {
-    gulp.watch(srcRoot + '/**/*.html', function () {
+    gulp.watch(srcRoot + '/**/**/*.html', function () {
         return gulp.src(srcRoot + '/**/*.html')
             .pipe(connect.reload());
     });
